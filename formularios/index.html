@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios</title>
+</head>
+<body>
+  <nav><!-- TODO: definir enlaces de navegación --></nav>
+  <h1>Formularios HTML</h1>
+  <p>Otro párrafo</p>
+  <p>En esta clase veremos formularios HTML y algunas de sus propiedades</p>
+
+  <form action="/">
+    <label for="nombre">Nombre</label>
+    <input required name="nombre" id="nombre" type="text" placeholder="Ingrese su nombre">
+    <br>
+    <label for="apellido">Apellido</label>
+    <input required name="apellido" id="apellido" type="text" placeholder="Ingrese su apellido" />
+    
+    <br>
+
+
+    <label for="sexo">Indique su género</label>
+    <select name="sexo" id="sexo">
+      <option selected>Eliga Género</option>
+      <option value="femenino">Mujer</option>
+      <option value="masculino">Hombre</option>
+    </select>
+
+    <br>
+
+    <label for="nacimiento">Ingrese Fecha de Nacimiento</label>
+    <input required type="date" name="nacimiento" id="nacimiento">
+    <br>
+    <label for="correo">Correo electrónico</label>
+    <input required type="email" name="email" id="correo">
+    <br>
+    <label for="foto">Foto Carnet</label>
+    <input type="file" name="foto" id="foto">
+
+    <br>
+    <label for="terminosCondiciones">Acepta términos y condiciones</label>
+    <input name="terminos" type="checkbox" id="terminosCondiciones">
+    <br>
+
+    <fieldset>
+      <div>
+        <label for="casado">Casado</label>
+        <input type="radio" name="estadoCivil" id="casado" value="casado">
+      </div>
+      <div>
+        <label for="soltero">Soltero/a</label>
+        <input type="radio" name="estadoCivil" id="soltero" value="soltero">
+      </div>
+      <div>
+        <label for="divorciado">Divorciado/a</label>
+        <input type="radio" name="estadoCivil" id="divorciado" value="divorciado">
+      </div>
+    </fieldset>
+    <br>
+    <div id="selectorRangoSalarial">
+      <label for="rango">Rango Salarial</label>
+      <input type="range" list="tickmarks" name="rango" id="rango" min="0" max="10">
+
+      <br>
+      <datalist id="tickmarks">
+        <option value="0" label="0">0</option>
+        <option value="1" label="1">1</option>
+        <option value="2" label="2">2</option>
+        <option value="3" label="3">3</option>
+        <option value="4" label="4">4</option>
+        <option value="5" label="5">5</option>
+        <option value="6" label="6">6</option>
+        <option value="7" label="7">7</option>
+        <option value="8" label="8">8</option>
+        <option value="9" label="9">9</option>
+        <option value="10" label="10">10</option>
+      </datalist>
+    </div>
+    <br>
+
+    <label for="rut">Rut</label>
+    <input type="text" name="rut" id="rut" pattern="^[0-9]+-[0-9kK]{1}$">
+    <br>
+    <label for="color">Eliga color</label>
+    <input type="color" name="color" id="color">
+    <br>
+    <button type="submit">Buscar</button>
+  </form>
+
+  <ol></ol>
+</body>
+</html>

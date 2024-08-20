@@ -1,0 +1,13 @@
+.caja {
+  height: 350px;
+}
+
+/*
+Unidad de medida
+rem: relativo al tamaño de fuente del navegador
+em: relativo al tamaño de fuente del elemento padre
+*/
+
+.navbar-brand > img {
+  height: 4rem;
+}

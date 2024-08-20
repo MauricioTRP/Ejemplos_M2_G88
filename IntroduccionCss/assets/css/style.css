@@ -1,0 +1,53 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+h1 {
+  background-color: rgb(77, 154, 154);
+}
+
+p {
+  /* background-color: rgb(159, 230, 159); */
+  font-size: 20px;
+  color: green;
+}
+
+a {
+  background-color: bisque;
+}
+
+/* Layout */
+#main {
+  width: 60%;
+  height: 80vh;
+  background-color: aquamarine;
+  display: inline-block;
+}
+
+#aside {
+  width: 35%;
+  height: 80vh;
+  background-color: rgb(223, 183, 221);
+  display: inline-block;
+}
+
+#main {
+  background-color:rgb(215, 202, 226);
+}
+
+#rosado {
+  background-color: rgb(7, 49, 86);
+  color: pink;
+}
+
+.rojo {
+  color: red;
+}
+
+.texto-centrado {
+  text-align: end;
+}
