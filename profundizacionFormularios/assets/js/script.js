@@ -7,4 +7,9 @@ form.addEventListener("submit", function(event) {
   const email = event.target.variableEmail.value
   const password = event.target.variablePassword.value
   const check = event.target.variableCheck.value
+
+  if (password == '') {
+    alert('Debes llenar el campo Password')
+    event.target.variablePassword.focus()
+  }
 })
